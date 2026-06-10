@@ -81,7 +81,7 @@ CREATE TABLE Patients_Allergies(
 
 	Patient_AllergyID INT IDENTITY(1,1) PRIMARY KEY,
 	DiagnosisDate DATE,
-	SeverityLevel NVARCHAR(20) CHECK(SeverityLevel IN ('Mild','Severe', 'Moderate' )) NOT NULL ,
+	SeverityLevel NVARCHAR(20) CHECK(SeverityLevel IN ('Mild','Severe', 'Moderate' )),
 	Note NVARCHAR(MAX),
 	PatientID INT FOREIGN KEY REFERENCES Patients(PatientID),
 	AllergyID SMALLINT FOREIGN KEY REFERENCES Allergies(AllergyID)
