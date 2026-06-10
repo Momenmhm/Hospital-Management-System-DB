@@ -107,6 +107,10 @@ IF NOT EXISTS (SELECT * FROM sys.databases WHERE NAME = 'Hospital_Management_Sys
     CREATE DATABASE Hospital_Management_SystemDB;
 ```
 
+> ## ⚠️ Note on Sample Data
+> Some data in this project was generated using AI tools and online data generators.
+> It may contain unrealistic values or minor inconsistencies — it's used for testing purposes only.
+
 ---
 
 ## Tech Stack
