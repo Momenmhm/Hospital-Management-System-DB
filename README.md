@@ -7,6 +7,7 @@ A relational database built with **SQL Server** to manage the core operations of
 ## Overview
 
 This project models a real hospital workflow from the moment a patient walks in — through treatment and medication — all the way to checkout and payment. The database is designed with data integrity, clear relationships, and practical scalability in mind.
+
 This database was built as a practical project for Course 15 on the Programming Advices platform, applying concepts like normalization, data integrity, and relational design under the guidance of instructor Dr. Mohammed Abu-Hadhoud.
 
 ---
