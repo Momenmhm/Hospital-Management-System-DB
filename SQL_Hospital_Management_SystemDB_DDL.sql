@@ -1,4 +1,5 @@
 
+-- NOTE: Run this script first to initialize the database
 
 IF NOT EXISTS(SELECT * FROM sys.databases WHERE NAME = 'Hospital_Management_SystemDB')
 	BEGIN 
@@ -6,6 +7,7 @@ IF NOT EXISTS(SELECT * FROM sys.databases WHERE NAME = 'Hospital_Management_Syst
 	END
 
 USE Hospital_Management_SystemDB;
+
 
 
 -- First, I created the main tables with no foreign keys
