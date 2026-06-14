@@ -8,9 +8,9 @@ IF NOT EXISTS(SELECT * FROM sys.databases WHERE NAME = 'Hospital_Management_Syst
 
 USE Hospital_Management_SystemDB;
 
+-- After initializing the database, run the rest of the scripts
 
-
--- First, I created the main tables with no foreign keys
+-- First, I created the main tables with no foreign keys.
 
 CREATE TABLE Departments (
 
