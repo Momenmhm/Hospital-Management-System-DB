@@ -6,7 +6,9 @@ IF NOT EXISTS(SELECT * FROM sys.databases WHERE NAME = 'Hospital_Management_Syst
 	END
 
 USE Hospital_Management_SystemDB;
--- fist of all I created important tables who's have no foregin key's
+
+
+-- First, I created the main tables with no foreign keys
 
 CREATE TABLE Departments (
 
@@ -51,7 +53,9 @@ CREATE TABLE Patients (
 	HomeAddress NVARCHAR(50),
 	BloodType NVARCHAR(5)
 )
--- here some table relate to patients
+
+-- Here are some tables related to patients.
+
 
 CREATE TABLE Patients_Phones(
 	
@@ -65,7 +69,7 @@ CREATE TABLE HealthInsurances (
 	InsuranceID INT IDENTITY(1,1) PRIMARY KEY,
 	InsuranceNumber NVARCHAR(15) NOT NULL,
 	InsuranceCompany NVARCHAR(30) NOT NULL,
-	CoveringPercentage DECIMAL(3,2),  -- note: the percentage represents like 85% = 0.85, 100% = 1.00
+	CoveringPercentage DECIMAL(3,2),  -- Note, Percentages are stored as decimal values which means 85% = 0.85, 100% = 1.00.
 	ExpiryDate Date NOT NULL,
 	PatientID INT FOREIGN KEY REFERENCES Patients(PatientID)
 )
@@ -134,7 +138,8 @@ CREATE TABLE PrescriptionMedications(
 	PrescriptionID INT FOREIGN KEY REFERENCES Prescriptions(PrescriptionID) 
 )
 
--- first steps to create admissions table
+-- Creating the Admissions table.
+
 
 CREATE TABLE Nurses (
 
